@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	*{
+		margin: 0;
+		padding: 0;
+	}
+		.top{
+			display: flex;
+			width: 1000px;
+			height: 600px;
+			background-color: #effedf;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			align-items: center;
+
+		}
+		.box{
+			width: 200px;
+			height: 200px;
+			background-color: red;
+			margin-bottom: 3px;
+			
+		}
+		.te{
+			background-color: #ba41cc;
+			width: 300px;
+			height: 300px;		
+			margin-bottom: 3px;
+	
+		}
+		.big{
+			width: 300px;
+			height: 310px;
+			background-color: #4195cc;
+			margin-bottom: 3px;
+			order: -1;
+			/*order属性定义项目的排列顺序。数值越小，排列越靠前，默认为0。*/
+
+		}
+		.con{
+			width: 400px;
+			height: 200px;
+			order: -2;
+			background-color: green;
+		}
+	</style>
+</head>
+<body>
+	<div class="top">
+		<div class="box">0</div>
+		<div class="box">1</div>
+		<div class="box">-1</div>
+		<div class="te">-2</div>
+		<div class="big">3</div>
+		<div class="con">2</div>
+	</div>
+</body>
+</html>
